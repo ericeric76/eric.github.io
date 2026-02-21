@@ -48,6 +48,15 @@ function kirimPesan(event) {
   let email = document.getElementById("emailPengirim").value;
   let pesan = document.getElementById("pesan").value;
 
+  const emailKamu = "25.01.eric@uib.edu";
+
+  // VALIDASI: Kalau email sama dengan email kamu
+  if (email.toLowerCase() === emailKamu.toLowerCase()) {
+    alert("Tidak bisa mengirim pesan menggunakan email pemilik website!");
+    return; // Stop di sini
+  }
+
+  // Kalau lolos validasi
   alert(
     "Pesan berhasil dikirim!\n\nNama: " + nama +
     "\nEmail: " + email +
