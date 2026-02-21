@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      Profil Eric
+    </div>
+
+    <nav>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#profil" class="nav-link">Profil</a>
+      <a href="#tentang" class="nav-link">Tentang</a>
+      <a href="#skill" class="nav-link">Skill</a>
+      <a href="#proyek" class="nav-link">Proyek</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+    </nav>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">Mode Gelap</button>
+  </header>
+
+  <div class="container">
+
+    <!-- BAGIAN PROFIL FULL ATAS -->
+    <section id="home" class="hero-top">
+      <div class="card profile-full">
+        
+        <div class="profile-box">
+          <img src="fotoeric3.jpeg" alt="Foto Profil Eric">
+
+          <div class="profile-info">
+            <h2 id="nama">Eric</h2>
+            <small id="status">Mahasiswa | Sistem Informasi</small>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item"><b>NPM:</b> <span id="NPM">000000000</span></div>
+          <div class="info-item"><b>Kampus:</b> <span id="kampus">Nama Kampus</span></div>
+          <div class="info-item"><b>Domisili:</b> <span id="domisili">Batam</span></div>
+          <div class="info-item"><b>Email:</b> <span id="email">25.01.eric@uib.edu</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BAGIAN HALO + FOTO VERTICAL -->
+    <section class="hero-bottom">
+
+      <div class="card vertical-photo-card">
+        <img src="fotoeric.jpeg" alt="Foto Vertical Eric" class="vertical-photo">
+      </div>
+
+      <div class="card halo-card">
+        <h1>Halo! 👋</h1>
+
+        <p>
+          Selamat datang di website biodata saya. Website ini dibuat menggunakan HTML, CSS, dan JavaScript.
+          Saya memiliki dedikasi untuk berkembang sebagai programmer yang mampu membangun solusi digital yang solutif dan bermanfaat.
+        </p>
+
+        <p class="extra-text">
+          Saya percaya bahwa konsistensi kecil setiap hari bisa menghasilkan perubahan besar.
+          Website ini adalah salah satu langkah kecil saya untuk berkembang sebagai Web Developer.
+        </p>
+
+        <!-- KALIMAT BARU BIAR TIDAK KOSONG -->
+        <p class="mini-text">
+          Dengan website ini, saya ingin menunjukkan perjalanan belajar saya dalam dunia teknologi.
+        </p>
+
+        <div class="badge">
+          Motto: "Belajar sedikit setiap hari, hasilnya besar nanti."
+        </div>
+      </div>
+
+    </section>
+
+    <section id="profil">
+      <h2 class="section-title">Profil Saya</h2>
+
+      <table class="profil-table">
+        <tr><td>Nama</td><td>: Eric</td></tr>
+        <tr><td>Tempat/Tgl Lahir</td><td>: Tanjung Balai Karimun, 13 Juni 2007</td></tr>
+        <tr><td>Jurusan</td><td>: Sistem Informasi</td></tr>
+        <tr><td>Semester</td><td>: 2</td></tr>
+        <tr><td>Hobi</td><td>: Belajar, Main Game, Dengar Musik</td></tr>
+        <tr><td>Cita-cita</td><td>: Web Developer</td></tr>
+      </table>
+    </section>
+
+    <section id="tentang">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="card">
+        <p class="text">
+          Saya adalah seorang mahasiswa yang sedang belajar pemrograman dan tertarik di bidang Web Developer.
+          Saya suka mencoba hal baru, belajar desain UI, dan membuat project kecil.
+        </p>
+      </div>
+    </section>
+
+    <section id="skill">
+      <h2 class="section-title">Skill Saya</h2>
+
+      <div class="card skills">
+
+        <div>
+          <div class="skill">
+            <label>HTML <span>35%</span></label>
+            <div class="bar"><div class="fill" data-skill="35"></div></div>
+          </div>
+
+          <div class="skill">
+            <label>CSS <span>25%</span></label>
+            <div class="bar"><div class="fill" data-skill="25"></div></div>
+          </div>
+
+          <div class="skill">
+            <label>JavaScript <span>30%</span></label>
+            <div class="bar"><div class="fill" data-skill="30"></div></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill">
+            <label>Python <span>40%</span></label>
+            <div class="bar"><div class="fill" data-skill="40"></div></div>
+          </div>
+
+          <div class="skill">
+            <label>UI/UX <span>35%</span></label>
+            <div class="bar"><div class="fill" data-skill="35"></div></div>
+          </div>
+
+          <div class="skill">
+            <label>SQL <span>30%</span></label>
+            <div class="bar"><div class="fill" data-skill="30"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="proyek">
+      <h2 class="section-title">Proyek Saya</h2>
+
+      <div class="projects">
+        <div class="card project-card">
+          <h3>Website Biodata</h3>
+          <p>Membuat web biodata mahasiswa dengan tampilan modern.</p>
+          <span class="tag">HTML + CSS + JAVASCRIPT</span>
+        </div>
+
+        <div class="card project-card">
+          <h3>Pengembangan Konten Multimedia</h3>
+          <p>Merancang poster edukatif dan video kreatif untuk menyampaikan informasi</p>
+          <span class="tag">ADOBE + CAPCUT</span>
+        </div>
+
+        <div class="card project-card">
+          <h3>Game Interaktif</h3>
+          <p>Mengembangkan game interaktif berbasis logika menggunakan Python.</p>
+          <span class="tag">PYTHON</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2 class="section-title">Kontak Saya</h2>
+
+      <div class="card">
+        <form onsubmit="kirimPesan(event)">
+          <input type="text" id="namaPengirim" placeholder="Nama kamu..." required />
+          <input type="email" id="emailPengirim" placeholder="Email kamu..." required />
+          <textarea id="pesan" placeholder="Tulis pesan..." required></textarea>
+          <button class="send-btn" type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 - Eric | Dibuat dengan HTML, CSS, dan JavaScript
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
